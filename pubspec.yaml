@@ -51,6 +51,13 @@ flutter:
   assets:
     - images/location_background.png
     - images/city_screen.png
+    - images/city_screen1.jpg
+    - images/fogg.png
+    - images/download.png
+    - images/download3.png
+    - images/download4.png
+    - images/weather.png
+    - images/weather1.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -15,7 +15,7 @@ class _CityScreenState extends State<CityScreen> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/city_screen.png'),
+            image: AssetImage('images/download4.png'),
             fit: BoxFit.cover,
           ),
         ),

@@ -52,9 +52,9 @@ class _LocationScreenState extends State<LocationScreen> {
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage('images/location_background.png'),
-            fit: BoxFit.cover,
-            colorFilter: ColorFilter.mode(
-                Colors.white.withOpacity(0.8), BlendMode.dstATop),
+            fit: BoxFit.fitHeight,
+            /*\colorFilter: ColorFilter.mode(
+                Colors.white.withOpacity(0.8), BlendMode.dstATop),*/
           ),
         ),
         constraints: BoxConstraints.expand(),
