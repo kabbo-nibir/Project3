@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:weatherapp/utilities/constant.dart';
+import 'package:flutter_google_places/flutter_google_places.dart';
+import 'package:google_maps_webservice/places.dart';
 
 class CityScreen extends StatefulWidget {
   @override
   _CityScreenState createState() => _CityScreenState();
 }
-
+final homeScaffoldKey = GlobalKey<ScaffoldState>();
 class _CityScreenState extends State<CityScreen> {
   String cityName;
 
@@ -38,11 +40,19 @@ class _CityScreenState extends State<CityScreen> {
               Container(
                 padding: EdgeInsets.all(20.0),
                 child: TextField(
+               /* onTap: ()async{
+                    Prediction p = await PlacesAutocomplete.show(
+                        context: context,
+                        apiKey: "e72ca729af228beabd5d20e3b7749713",
+                        mode: Mode.overlay, // Mode.fullscreen
+                        language: "en-us",
+                        components: [Component(Component.country, "BD")],);
+                  },*/
                   style: TextStyle(
                     color: Colors.black,
                   ),
                   decoration: kTextFieldInputDecoration,
-                  onChanged: (value) {
+                  onSubmitted: (value) {
                     cityName = value;
                   },
                 ),
